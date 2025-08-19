@@ -1,0 +1,35 @@
+{
+    "name": "website-blocker",
+    "version": "1.0.0",
+    "description": "Chrome extension to block distracting websites",
+    "scripts": {
+        "build": "npm run build:css && webpack",
+        "build:css": "tailwindcss -i ./src/styles/input.css -o ./dist/styles.css",
+        "watch": "npm run build:css && webpack --watch",
+        "dev": "npm run build:css && webpack --watch"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.246",
+        "@types/react": "^18.0.0",
+        "@types/react-dom": "^18.0.0",
+        "clsx": "^2.0.0",
+        "copy-webpack-plugin": "^11.0.0",
+        "html-webpack-plugin": "^5.0.0",
+        "tailwind-merge": "^2.0.0",
+        "tailwindcss": "^3.4.10",
+        "ts-loader": "^9.0.0",
+        "typescript": "^5.0.0",
+        "webpack": "^5.0.0",
+        "webpack-cli": "^5.0.0"
+    },
+    "dependencies": {
+        "@radix-ui/react-label": "^2.1.7",
+        "@radix-ui/react-select": "^2.2.6",
+        "@radix-ui/react-slot": "^1.0.0",
+        "@radix-ui/react-switch": "^1.0.0",
+        "class-variance-authority": "^0.7.0",
+        "lucide-react": "^0.400.0",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0"
+    }
+}
